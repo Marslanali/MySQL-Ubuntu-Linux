@@ -1,6 +1,6 @@
 # MySQL-Ubuntu-Linux
 
-MySQL Installation and Configuration on Ubuntu Linux
+MySQL Server, and Workbench Installation and Configuration on Ubuntu Linux
 
 
 ```
@@ -17,6 +17,8 @@ sudo ls -al /var/lib/mysql*
 ```
 
 ```
+Get MySQL apt deb file: https://dev.mysql.com/downloads/repo/apt/
+
 cd ~/Downloads
 
 sudo dpkg -i mysql-apt-config_0.8.15-1_all.deb 
@@ -26,6 +28,8 @@ sudo apt-get update
 sudo apt-get -y install mysql-server
 ```
 
+MySQL server start/stop/status
+
 ```
 sudo service mysql start
 
@@ -33,6 +37,8 @@ sudo service mysql status
 
 sudo service mysql stop
 ```
+
+MySQL server CLI interface:
 
 ```
 mysql -u root -p 
@@ -46,12 +52,14 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'p
 
 ```
 
-username: root
-password: password
+This will make `username: root` and `password: password`.
 
 
 ## Install MySQL Workbench on Ubuntu
 
 ```
+sudo apt-get update
 sudo apt-get -y install mysql-workbench
 ```
+
+
