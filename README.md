@@ -1,6 +1,6 @@
 # MySQL-Ubuntu-Linux
 
-MySQL Server, and Workbench Installation and Configuration on Ubuntu Linux
+MySQL Server, and Workbench Installation and Configuration on Ubuntu Linux.
 
 
 ```bash
